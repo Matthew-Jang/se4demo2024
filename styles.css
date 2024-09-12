@@ -24,6 +24,25 @@ h1 {
     font-size: 70px;
 }
 
+h2{
+    font-weight: bold;
+    text-align: center;
+    font-size: 70px;
+}
+h3{
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+h4{
+    font-weight: bold;
+    font-size: 28px;
+}
+h5{
+    font-weight: bold;
+    text-align: right;
+    font-size: 28px;
+}
 /* Navigation bar styles */
 ul {
     font-family: Poppins, sans-serif;
@@ -64,3 +83,16 @@ li a:hover {
     margin-right: auto;
     fill: white;
 }
+
+.my-cat-image {
+    width: 200px;
+    height: 200px;
+}
+
+#emoji-container {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
