@@ -24,6 +24,7 @@ h1 {
     text-align: center;
     font-size: 70px;
 }
+
 h2{
     font-weight: bold;
     text-align: center;
@@ -106,6 +107,7 @@ li a:hover {
     margin-top: 50px;
 }
 
+<<<<<<< HEAD
 /*accordian stuff*/
 .accordion {
   max-width: 600px;
@@ -137,3 +139,6 @@ li a:hover {
   background-color: #282828;
 }
 /*END OF MICHAEL SECTION*/
+=======
+
+>>>>>>> 31c7aa4f0e9344e22fadd27628d45e1076f7a4e3
