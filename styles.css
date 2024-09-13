@@ -45,7 +45,7 @@ h5{
     font-size: 28px;
 }
 /* Navigation bar styles */
-ul {
+.nav-bar {
     font-family: Poppins, sans-serif;
     list-style-type: none;
     margin: 0;
@@ -57,11 +57,11 @@ ul {
     top: 0;
 }
 
-li {
+.nav-bar li {
     float: left;
 }
 
-li a {
+.nav-bar li a {
     display: block;
     color: white;
     text-align: center;
@@ -69,7 +69,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.nav-bar li a:hover {
     background-color: #48111C;
 }
 
@@ -84,6 +84,7 @@ li a:hover {
     margin-right: auto;
     fill: white;
 }
+
 
 .my-cat-image {
     float: right;

@@ -1,0 +1,12 @@
+cream - rgb(244,236,208);
+silver - rgb(213,223,231);
+marigold - rgb(249,198,52);
+salmon - rgb(246,141,118);
+red-orange - rgb(240,78,62);
+royal - rgb(17,138,203);
+storm - rgb(112, 142, 154);
+navy - rgb(0,71,97);
+sky - rgb(189,227,220);
+ethos - rgb(94,196,182);
+teal - rgb(39,87,90);
+
