@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Careers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tasks">Daily Tasks</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </div>
+
+    <h1>Cybersecurity Careers</h1>
+    <div class="intro-section">
+        <p>
+            Discover the exciting world of cybersecurity, where professionals work to protect data and systems from
+            cyber threats. This page will guide you through various job types, daily tasks, essential tools, skills,
+            and projects in the field of cybersecurity. Whether you're considering a career change or just curious
+            about the field, you'll find valuable information to get you started.
+        </p>
+    </div>
+
+    <!-- Job Types -->
+    <div class="section-title">
+        <h2> Job Types</h2>
+    </div>
+
+    <!-- ********************************************************************************************************************************* -->
+ <div class="grid-container">
+    <div class="grid-item">
+        <h2>Security Analyst</h2>
+        <p>A security analyst monitors and protects an organization's IT infrastructure.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Penetration Tester</h2>
+        <p>A penetration tester identifies vulnerabilities in systems through simulated attacks.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Incident Responder</h2>
+        <p>An incident responder handles and mitigates security breaches and incidents.</p>
+    </div>
+    <div class="grid-item">
+        <h2>Security Engineer</h2>
+        <p>A security engineer designs and implements security measures to protect systems.</p>
+    </div>
+</div>
+<!-- ********************************************************************************************************************************* -->
+
+
+    <div class="section-divider"></div>
+
+    <!-- Activities/Tasks -->
+    <div class="section-title">
+        <h2>Activities/Tasks</h2>
+    </div>
+
+    <div class="accordion">
+        <button class="accordion-button">Daily Tasks</button>
+        <div class="accordion-content">
+            <ul>
+                <li>Monitoring security systems</li>
+                <li>Conducting vulnerability assessments</li>
+                <li>Responding to security breaches</li>
+                <li>Implementing security measures</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- Tools + Skills Used -->
+    <div class="section-title">
+        <h2>Tools + Skills Used</h2>
+    </div>
+
+    <div class="accordion">
+        <button class="accordion-button">Tools & Skills</button>
+        <div class="accordion-content">
+            <ul>
+                <li>Firewalls and VPNs</li>
+                <li>Encryption tools</li>
+                <li>Intrusion detection systems (IDS)</li>
+                <li>Knowledge of ethical hacking</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section-title">
+        <h2>Projects</h2>
+    </div>
+
+    <div class="accordion">
+        <button class="accordion-button">Projects</button>
+        <div class="accordion-content">
+            <ul>
+                <li>Designing secure network architectures</li>
+                <li>Creating security protocols for cloud environments</li>
+                <li>Developing tools to detect and prevent cyber threats</li>
+                <li>Penetration testing simulations</li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+
+
+<script>
+    // Add JavaScript for accordion functionality
+    document.querySelectorAll('.accordion-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            button.classList.toggle('active');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+
+<!-- ********************************************************************************************************************************* 
+ original grids
+
+<div class="grid-container">
+    <div class="grid-item">
+        <img src="https://via.placeholder.com/150" alt="Job 1">
+        <h2>Software Developer</h2>
+        <p>Build and maintain software applications, working on various programming languages and tools.</p>
+    </div>
+    <div class="grid-item">
+        <img src="https://via.placeholder.com/150" alt="Job 2">
+        <h2>Data Scientist</h2>
+        <p>Analyze and interpret complex data to help companies make informed decisions.</p>
+    </div>
+    <div class="grid-item">
+        <img src="https://via.placeholder.com/150" alt="Job 3">
+        <h2>Cybersecurity Analyst</h2>
+        <p>Protect an organization’s computer systems and networks from cyber threats.</p>
+    </div>
+    <div class="grid-item">
+        <img src="https://via.placeholder.com/150" alt="Job 4">
+        <h2>Systems Administrator</h2>
+        <p>Manage and maintain an organization's IT infrastructure and network systems.</p>
+    </div>
+</div>
+ ********************************************************************************************************************************* -->
