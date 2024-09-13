@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs in Computer Science!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Title styles */
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        /* Container for grid layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            grid-template-rows: repeat(2, auto); /* Two rows */
+            gap: 20px; /* Spacing between grid items */
+            padding: 20px;
+        }
+
+        /* Individual grid items */
+        .grid-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Image styles */
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Title in grid items */
+        .grid-item h2 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+        }
+
+        /* Paragraph in grid items */
+        .grid-item p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Jobs in Computer Science!</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/150" alt="Job 1">
+            <h2>Software Developer</h2>
+            <p>Build and maintain software applications, working on various programming languages and tools.</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/150" alt="Job 2">
+            <h2>Data Scientist</h2>
+            <p>Analyze and interpret complex data to help companies make informed decisions.</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/150" alt="Job 3">
+            <h2>Cybersecurity Analyst</h2>
+            <p>Protect an organization’s computer systems and networks from cyber threats.</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/150" alt="Job 4">
+            <h2>Systems Administrator</h2>
+            <p>Manage and maintain an organization's IT infrastructure and network systems.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
