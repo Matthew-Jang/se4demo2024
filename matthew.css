@@ -212,5 +212,44 @@ teal - rgb(39,87,90); */
     color: #005f73; /* Darken color on hover */
 }
 
+/*  about us page   */
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.section:nth-child(even) {
+    background-color: rgb(0, 71, 97);
+    flex-direction: row-reverse;
+    color: rgb(189, 227, 220);
+}
+
+.section:nth-child(odd) {
+    background-color: rgb(112, 142, 154);
+    color: rgb(0,71,97);
+    /* Different color for odd sections */
+}
+
+.section img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 300px;
+     height: 300px;
+}
+
+.section div {
+    max-width: 500px;
+    padding: 0 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
 /*     Matthew CSS Section End    */
 /***************************************************************************************/
