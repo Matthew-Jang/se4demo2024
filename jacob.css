@@ -73,6 +73,16 @@ li a:hover {
     padding: 20px;
 }
 
+.career-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.career-link:hover {
+    transform: scale(1.05);
+}
+
 .career-card {
     background-color: #333;
     border-radius: 10px;
@@ -81,11 +91,6 @@ li a:hover {
     text-align: center;
     color: white;
     position: relative;
-    transition: transform 0.3s ease;
-}
-
-.career-card:hover {
-    transform: scale(1.05);
 }
 
 .career-image {
