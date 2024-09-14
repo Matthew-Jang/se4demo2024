@@ -1,0 +1,119 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Centering images */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+/* General body styles */
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 28px;
+    color: white;
+    background-color: #282828;
+}
+
+/* Header styles */
+h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 70px;
+}
+
+/* Navigation bar styles */
+ul {
+    font-family: Poppins, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #811429;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #48111C;
+}
+
+.active {
+    background-color: #48111C;
+}
+
+/* SVG styles for the oc branding */
+.svgstylings {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    fill: white;
+}
+
+.career-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.career-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.career-link:hover {
+    transform: scale(1.05);
+}
+
+.career-card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.career-image {
+    width: 100%;
+    height: auto;
+}
+
+.career-card h2 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.career-description {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.career-card:hover .career-description {
+    display: block;
+}
