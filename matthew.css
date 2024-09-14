@@ -204,12 +204,12 @@ teal - rgb(39,87,90); */
 
 .resource-link {
     text-decoration: none; /* Remove underline */
-    color: #008CBA; /* Choose a distinct color */
+    color: #f0dCa0; /* Choose a distinct color */
 }
 
 .resource-link:hover {
     text-decoration: underline; /* Underline on hover */
-    color: #005f73; /* Darken color on hover */
+    color: #e7c665; /* Darken color on hover */
 }
 
 /*     Matthew CSS Section End    */
