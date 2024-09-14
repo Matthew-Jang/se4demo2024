@@ -38,6 +38,33 @@ function changeFaqWords() {
 // Change words every 2 seconds (2000 milliseconds)
 setInterval(changeFaqWords, 1000);
 
+//MEME PAGE
+const MemeWords = ["m ","m|","me ","me|", "mem ", "mem|", "meme ","meme|","memes ", "memes|", 
+"meme|", "meme ", "mem|", "mem ", "me|", "me ", "m|", "m ",
+"j ", "j|", "jo ", "jo|", "jok ", "jok|", "joke ", "joke|", "jokes ", "jokes|",
+"joke|", "joke ", "jok|", "jok ", "jo|", "jo ", "j|", "j ",   
+ "g ", "g|", "go ", "go|", "goo ", "goo|", "goof ", "goof|", "goofs ", "goofs|",
+"goof|", "goof ", "goo|", "goo ", "go|", "go ", "g|", "g ", 
+"l ", "l|", "la ", "la|", "lau ", "lau|", "laug ", "laug|", "laugh ", "laugh|", "laughs ", "laughs|",
+"laugh|", "laugh ", "laug|", "laug ", "lau|", "lau ", "la|", "la ", "l|", "l ",
+"c ", "c|", "ca ", "ca|", "cat ", "cat|", "cats ", "cats|",
+"cat|", "cat ", "ca|", "ca ", "c|", "c ",
+ "【≽ܫ≼】"];
+let MemeIndex = 0;
+
+// Function to change the meme words
+function changeMemeWords() {
+    const container = document.getElementById('meme-container');
+
+    // Update the content of the container with the current word
+    container.textContent = MemeWords[MemeIndex];
+    // Update the index to point to the next emoji
+    MemeIndex = (MemeIndex + 1) % MemeWords.length;
+}
+
+// Change words every 2 seconds (2000 milliseconds)
+setInterval(changeMemeWords, 125);
+
 // accordian stuff
 document.addEventListener('DOMContentLoaded', function() {
   const headers = document.querySelectorAll('.accordion-header');
