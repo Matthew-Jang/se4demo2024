@@ -1,0 +1,330 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Centering images */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+/* General body styles */
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 28px;
+    color: white;
+    background-color: #282828;
+}
+
+#title-container {
+    font-size: 100px;
+    text-align: center;
+}
+
+/* Header styles */
+h1 {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 100px;
+}
+h2{
+    font-weight: bold;
+    text-align: center;
+    font-size: 70px;
+}
+h3{
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+
+/***************************************************************************************/
+/*  Image and Welcome Section  */
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white; /* Adjust text color to contrast with the image */
+    margin-top: 0; /* Remove margin or set to a small value */
+    padding:0;
+    margin:0;
+    margin-bottom:0px;
+}
+
+.header-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area */
+    z-index: -1; /* Places the image behind the text */
+}
+
+.header h2, #title-container, #day-in-the-life-title-container, #software-dev-title-container,
+#cybersecurity-title-container, #ai-title-container, #team-title-container, #ga-title-container {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 80px;
+    position: relative; /* Ensures text stays above the image */
+    z-index: 1; /* Ensures text stays above the image */
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5); /* Black overlay with 50% opacity */
+    z-index: -1;
+}
+
+.header-overlay-ai {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7); /* Black overlay with 50% opacity */
+    z-index: -1;
+}
+
+/***************************************************************************************/
+/* Navigation bar styles */
+
+.nav-bar {
+    font-family: Poppins, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #811429;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    margin-top: -70px;
+}
+
+.nav-bar li {
+    float: left;
+}
+
+.nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
+    background-color: #48111C;
+}
+
+.active {
+    background-color: #48111C;
+}
+
+/* SVG styles for the oc branding */
+.svgstylings {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    fill: white;
+}
+
+/***************************************************************************************/
+/*     Sections     */
+
+.intro-section {
+    background-color: #282828; /* Dark background for contrast */
+    color: white; /* White text for readability */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center align text */
+    margin: 0;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+.section-title h2{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #811429;
+    top: 0;
+    text-align:center;
+    margin-top: 100px;
+} 
+
+/* 
+maroon - #811429;
+cream - rgb(244,236,208);
+silver - rgb(213,223,231);  ++
+marigold - rgb(249,198,52); +
+salmon - rgb(246,141,118); +
+red-orange - rgb(240,78,62);
+royal - rgb(17,138,203);
+storm - rgb(112, 142, 154);
+navy - rgb(0,71,97);
+sky - rgb(189,227,220);
+ethos - rgb(94,196,182);
+teal - rgb(39,87,90); 
+*/
+
+/***************************************************************************************/
+/* Container for grid layout - matthew*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(2, auto); /* Two rows */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+}
+
+/* Individual grid items */
+.grid-item {
+    background-color: rgb(240,78,62);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Image styles */
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Title in grid items */
+.grid-item h2 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+/* Paragraph in grid items */
+.grid-item p {
+    font-size: 14px;
+    color: rgb(213,223,231);
+}
+
+.resource-link {
+    text-decoration: none; /* Remove underline */
+    color: #f0dCa0; /* Choose a distinct color */
+}
+
+.resource-link:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #e7c665; /* Darken color on hover */
+}
+
+/***************************************************************************************/
+/*  about us page   */
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 50px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 8px;
+}
+
+.section:nth-child(even) {
+    background-color: rgb(0, 71, 97);
+    flex-direction: row-reverse;
+    color: rgb(189, 227, 220);
+}
+
+.section:nth-child(odd) {
+    background-color: rgb(112, 142, 154);
+    color: rgb(0,71,97);
+    /* Different color for odd sections */
+}
+
+.section img {
+    /* max-width: 300px; */
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 300px;
+    height: 300px;
+}
+
+.section div {
+    max-width: 500px;
+    /* padding: 0 20px; */
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.section h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left:0px;
+    text-align:left;
+}
+
+.section p {
+    margin-top: 0;
+}
+
+/* unused */
+.section-divider {
+    border-bottom: 1px solid white; /* Thin white line */
+    margin: 20px 0; /* Adjust spacing above and below the line */
+}
+
+.regular-list {
+    list-style-type: disc;  /* Default bullet points */
+    margin: 20px 0;
+    padding-left: 40px;
+    font-family: Poppins, sans-serif; /* Keeps the same font */
+    background-color: transparent; /* No background color */
+    position: static; /* Removes sticky behavior */
+    margin-bottom: 100px;
+}
+
+.regular-list li {
+    display: block; /* Ensures list items are on separate lines */
+    margin-bottom: 5px; /* Adds space between each list item */
+    float: none; /* Resets the float property to prevent grouping */
+}
+
+.regular-list p {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: #282828;
+    margin-left:30px;
+}
+
+
+/***************************************************************************************/
+
+/* Footer Styles */
+.footer {
+    background-color: #811429;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+/*     Matthew CSS Section End    */
+/***************************************************************************************/
