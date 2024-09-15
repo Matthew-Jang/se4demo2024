@@ -39,10 +39,6 @@ h3{
     text-align: center;
     font-size: 50px;
 }
-h4{
-    font-weight: bold;
-    font-size: 28px;
-}
 
 /***************************************************************************************/
 /*  Image and Welcome Section  */
@@ -64,7 +60,10 @@ h4{
     z-index: -1; /* Places the image behind the text */
 }
 
-.header h2, #title-container {
+.header h2, #title-container, #day-in-the-life-title-container {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 70px;
     position: relative; /* Ensures text stays above the image */
     z-index: 1; /* Ensures text stays above the image */
 }
