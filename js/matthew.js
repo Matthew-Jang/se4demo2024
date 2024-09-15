@@ -1,6 +1,6 @@
 //GETTING STARTED PAGE
 const titles = ["Computer Science", "Programming", "Problem Solving", "Debugging", "Coding"];
-let titleIndex = 0;
+let titleIndex = 1;
 
 // Function to change the emoji
 function changeGetingStartedTitle() {
@@ -17,7 +17,7 @@ setInterval(changeGetingStartedTitle, 1300); // Change emoji every 2 seconds (20
 /*************************************************************************************************************** */
 // SOFTWARE DEV PAGE
 const dev_titles = ["Software Development", "Collaborations", "Reviews", "Innovations"];
-let dev_titlesIndex = 0;
+let dev_titlesIndex = 1;
 
 // Function to change the emoji
 function changeSoftwareDevTitle() {
@@ -34,7 +34,7 @@ setInterval(changeSoftwareDevTitle, 1300); // Change emoji every 2 seconds (2000
 /*************************************************************************************************************** */
 // CYBERSECURITY PAGE
 const cyber_titles = ["Cybersecurity", "Hacking", "Protecting", "Analysis"];
-let cyber_titlesIndex = 0;
+let cyber_titlesIndex = 1;
 
 // Function to change the emoji
 function changeCyberDevTitle() {
@@ -51,7 +51,7 @@ setInterval(changeCyberDevTitle, 1300); // Change emoji every 2 seconds (2000 mi
 /*************************************************************************************************************** */
 // AI PAGE
 const ai_titles = ["AI", "Automation", "Algorithms", "Research"];
-let ai_titlesIndex = 0;
+let ai_titlesIndex = 1;
 
 // Function to change the emoji
 function changeAiTitle() {
@@ -68,7 +68,7 @@ setInterval(changeAiTitle, 1300); // Change emoji every 2 seconds (2000 millisec
 /*************************************************************************************************************** */
 // A DAY IN THE LIFE PAGE
 const day_titles = ["Collaborating", "Reviewing", "Problem Solving", "Debugging", "Coding"];
-let day_titlesIndex = 0;
+let day_titlesIndex = 1;
 
 // Function to change the emoji
 function changDayInTheLifeTitle() {
@@ -86,7 +86,7 @@ setInterval(changDayInTheLifeTitle, 1300); // Change emoji every 2 seconds (2000
 /*************************************************************************************************************** */
 // ABOUT US PAGE
 const team_titles = ["North's Favorite", "Best", "Fastest", "Most Successful", "Most Accomplished", "Funniest", "Coolest", "Most Fashionable", "Nicest", "Most Humble", "Most Passionate", "Most Loving", "Most Energetic"];
-let team_titlesIndex = 0;
+let team_titlesIndex = 1;
 
 // Function to change the emoji
 function changTeamTitle() {
