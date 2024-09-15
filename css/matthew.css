@@ -60,7 +60,7 @@ h3{
     z-index: -1; /* Places the image behind the text */
 }
 
-.header h2, #title-container, #day-in-the-life-title-container {
+.header h2, #title-container, #day-in-the-life-title-container, #software-dev-title-container {
     font-weight: lighter;
     text-align: center;
     font-size: 70px;

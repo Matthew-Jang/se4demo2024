@@ -16,6 +16,23 @@ setInterval(changeGetingStartedTitle, 1300);
 
 
 
+/********************************************************* */
+// SOFTWARE DEV PAGE
+const dev_titles = ["Software Development", "Collaborations", "Reviews", "Innovations"];
+let dev_titlesIndex = 0;
+
+// Function to change the emoji
+function changeSoftwareDevTitle() {
+    const container = document.getElementById('software-dev-title-container');
+    // Update the content of the container with the current emoji
+    container.textContent = dev_titles[dev_titlesIndex];
+    // Update the index to point to the next emoji
+    dev_titlesIndex = (dev_titlesIndex + 1) % dev_titles.length;
+}
+
+// Change emoji every 2 seconds (2000 milliseconds)
+setInterval(changeSoftwareDevTitle, 1300);
+
 
 
 /********************************************************* */
@@ -34,3 +51,4 @@ function changDayInTheLifeTitle() {
 
 // Change emoji every 2 seconds (2000 milliseconds)
 setInterval(changDayInTheLifeTitle, 1300);
+
