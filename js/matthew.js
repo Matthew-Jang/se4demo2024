@@ -27,7 +27,7 @@ function changeSoftwareDevTitle() {
     // Update the index to point to the next emoji
     dev_titlesIndex = (dev_titlesIndex + 1) % dev_titles.length;
 }
-setInterval(changeGetingStartedTitle, 1300); // Change emoji every 2 seconds (2000 milliseconds)
+setInterval(changeSoftwareDevTitle, 1300); // Change emoji every 2 seconds (2000 milliseconds)
 
 
 
@@ -37,14 +37,14 @@ const cyber_titles = ["Cybersecurity", "Hacking", "Protecting", "Analysis"];
 let cyber_titlesIndex = 0;
 
 // Function to change the emoji
-function changeSoftwareDevTitle() {
+function changeCyberDevTitle() {
     const container = document.getElementById('cybersecurity-title-container');
     // Update the content of the container with the current emoji
     container.textContent = cyber_titles[cyber_titlesIndex];
     // Update the index to point to the next emoji
     cyber_titlesIndex = (cyber_titlesIndex + 1) % cyber_titles.length;
 }
-setInterval(changeGetingStartedTitle, 1300); // Change emoji every 2 seconds (2000 milliseconds)
+setInterval(changeCyberDevTitle, 1300); // Change emoji every 2 seconds (2000 milliseconds)
 
 
 
