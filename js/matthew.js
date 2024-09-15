@@ -80,3 +80,31 @@ function changDayInTheLifeTitle() {
 }
 setInterval(changeGetingStartedTitle, 1300); // Change emoji every 2 seconds (2000 milliseconds)
 
+
+
+
+/*************************************************************************************************************** */
+// ABOUT US PAGE
+const team_titles = ["North's Favorite", "Best", "Fastest", "Funniest", "Coolest", "Most Fashionable", "Nicest", "Most Humble", "Most Passionate", "Accomplished", "Most Loving", "Energetic"];
+let team_titlesIndex = 0;
+
+// Function to change the emoji
+function changTeamTitle() {
+    if(team_titlesIndex === 0){
+        document.getElementById('changing_header').textContent = "Meet";
+    }
+    else{
+        document.getElementById('changing_header').textContent = "Meet The";
+    }
+    const container = document.getElementById('team-title-container');
+    // Update the content of the container with the current emoji
+    container.textContent = team_titles[team_titlesIndex];
+    // Update the index to point to the next emoji
+    team_titlesIndex = (team_titlesIndex + 1) % team_titles.length;
+    if(team_titlesIndex % team_titles.length === 0){
+        team_titlesIndex = 0;
+    }
+}
+setInterval(changTeamTitle, 1300); // Change emoji every 2 seconds (2000 milliseconds)
+
+
