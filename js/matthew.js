@@ -96,7 +96,7 @@ function changDayInTheLifeTitle() {
     // Update the index to point to the next emoji
     day_titlesIndex = (day_titlesIndex + 1) % day_titles.length;
 }
-setInterval(changeGetingStartedTitle, 1300); // Change emoji every 2 seconds (2000 milliseconds)
+setInterval(changDayInTheLifeTitle, 1300); // Change emoji every 2 seconds (2000 milliseconds)
 
 
 
