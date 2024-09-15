@@ -85,7 +85,7 @@ setInterval(changeGetingStartedTitle, 1300); // Change emoji every 2 seconds (20
 
 /*************************************************************************************************************** */
 // ABOUT US PAGE
-const team_titles = ["North's Favorite", "Best", "Fastest", "Funniest", "Coolest", "Most Fashionable", "Nicest", "Most Humble", "Most Passionate", "Accomplished", "Most Loving", "Energetic"];
+const team_titles = ["North's Favorite", "Best", "Fastest", "Most Successful", "Most Accomplished", "Funniest", "Coolest", "Most Fashionable", "Nicest", "Most Humble", "Most Passionate", "Most Loving", "Most Energetic"];
 let team_titlesIndex = 0;
 
 // Function to change the emoji
