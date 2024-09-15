@@ -191,7 +191,29 @@ p {
 
 /*END OF MICHAEL SECTION*/
 
+/***************************************************************************************/
+
 /****** MATTHEW ADDITIONS START ******/
+
+/* Footer Styles */
+.footer {
+    background-color: #811429;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
 .header {
     position: relative;
     text-align: center;
