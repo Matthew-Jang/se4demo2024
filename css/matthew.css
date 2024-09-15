@@ -60,10 +60,11 @@ h3{
     z-index: -1; /* Places the image behind the text */
 }
 
-.header h2, #title-container, #day-in-the-life-title-container, #software-dev-title-container {
+.header h2, #title-container, #day-in-the-life-title-container, #software-dev-title-container,
+#cybersecurity-title-container {
     font-weight: lighter;
     text-align: center;
-    font-size: 70px;
+    font-size: 80px;
     position: relative; /* Ensures text stays above the image */
     z-index: 1; /* Ensures text stays above the image */
 }

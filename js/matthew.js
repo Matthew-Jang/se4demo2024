@@ -34,6 +34,23 @@ function changeSoftwareDevTitle() {
 setInterval(changeSoftwareDevTitle, 1300);
 
 
+/********************************************************* */
+// CYBERSECURITY PAGE
+const cyber_titles = ["Cybersecurity", "Hacking", "Protecting", "Analysis"];
+let cyber_titlesIndex = 0;
+
+// Function to change the emoji
+function changeSoftwareDevTitle() {
+    const container = document.getElementById('cybersecurity-title-container');
+    // Update the content of the container with the current emoji
+    container.textContent = cyber_titles[cyber_titlesIndex];
+    // Update the index to point to the next emoji
+    cyber_titlesIndex = (cyber_titlesIndex + 1) % cyber_titles.length;
+}
+
+// Change emoji every 2 seconds (2000 milliseconds)
+setInterval(changeSoftwareDevTitle, 1300);
+
 
 /********************************************************* */
 // A DAY IN THE LIFE PAGE
