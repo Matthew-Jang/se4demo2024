@@ -27,7 +27,6 @@ h1 {
     font-weight: lighter;
     text-align: center;
     font-size: 100px;
-    margin-top:20%;
 }
 h2{
     font-weight: bold;
@@ -48,6 +47,9 @@ h3{
     text-align: center;
     color: white; /* Adjust text color to contrast with the image */
     margin-top: 0; /* Remove margin or set to a small value */
+    padding:0;
+    margin:0;
+    margin-bottom:0px;
 }
 
 .header-bg-img {
@@ -91,6 +93,7 @@ h3{
 
 /***************************************************************************************/
 /* Navigation bar styles */
+
 .nav-bar {
     font-family: Poppins, sans-serif;
     list-style-type: none;
@@ -101,7 +104,7 @@ h3{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    z-index: 10;
+    margin-top: -70px;
 }
 
 .nav-bar li {
