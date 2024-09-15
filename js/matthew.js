@@ -32,6 +32,24 @@ setInterval(changeSoftwareDevTitle, 1300); // Change emoji every 2 seconds (2000
 
 
 /*************************************************************************************************************** */
+// GAMING & ANIMATION PAGE
+const ga_titles = ["Gaming & Animation", "Game Modeling", "Sound Design", "Puzzle Making"];
+let ga_titlesIndex = 0;
+
+// Function to change the emoji
+function changGATitle() {
+    const container = document.getElementById('ga-title-container');
+    // Update the content of the container with the current emoji
+    container.textContent = ga_titles[ga_titlesIndex];
+    // Update the index to point to the next emoji
+    ga_titlesIndex = (ga_titlesIndex + 1) % ga_titles.length;
+}
+setInterval(changGATitle, 1300); // Change emoji every 2 seconds (2000 milliseconds)
+
+
+
+
+/*************************************************************************************************************** */
 // CYBERSECURITY PAGE
 const cyber_titles = ["Cybersecurity", "Hacking", "Protecting", "Analysis"];
 let cyber_titlesIndex = 0;
