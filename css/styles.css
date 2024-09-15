@@ -106,6 +106,7 @@ li a:hover {
     font-size: 100px;
     text-align: center;
     margin-top: 50px;
+    z-index: 1;
 }
 #faq-word-container {
     font-size: 100px;
@@ -189,3 +190,37 @@ p {
 }
 
 /*END OF MICHAEL SECTION*/
+
+/****** MATTHEW ADDITIONS START ******/
+.header {
+    position: relative;
+    text-align: center;
+    color: white; /* Adjust text color to contrast with the image */
+    margin-top: 0; /* Remove margin or set to a small value */
+}
+
+.header-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area */
+    z-index: -1; /* Places the image behind the text */
+}
+
+.header h2, #emoji-container {
+    position: relative; /* Ensures text stays above the image */
+    z-index: 1; /* Ensures text stays above the image */
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 0;
+}
+/****** MATTHEW ADDITIONS END ******/
