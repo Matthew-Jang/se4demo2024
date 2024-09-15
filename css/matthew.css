@@ -61,7 +61,7 @@ h3{
 }
 
 .header h2, #title-container, #day-in-the-life-title-container, #software-dev-title-container,
-#cybersecurity-title-container, #ai-title-container {
+#cybersecurity-title-container, #ai-title-container, #team-title-container {
     font-weight: lighter;
     text-align: center;
     font-size: 80px;
@@ -225,11 +225,12 @@ teal - rgb(39,87,90);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
-    margin: 20px 0;
+    padding: 20px;
+    margin: 50px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: 200px;
     margin-right: 200px;
+    border-radius: 8px;
 }
 
 .section:nth-child(even) {
@@ -245,7 +246,7 @@ teal - rgb(39,87,90);
 }
 
 .section img {
-    max-width: 300px;
+    /* max-width: 300px; */
     border-radius: 10px;
     margin-left: 25px;
     margin-right: 25px;
@@ -255,18 +256,26 @@ teal - rgb(39,87,90);
 
 .section div {
     max-width: 500px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     margin-left: 25px;
     margin-right: 25px;
+}
+
+.section h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left:0px;
+    text-align:left;
+}
+
+.section p {
+    margin-top: 0;
 }
 
 /* unused */
 .section-divider {
     border-bottom: 1px solid white; /* Thin white line */
     margin: 20px 0; /* Adjust spacing above and below the line */
-
-
-    
 }
 
 .regular-list {
