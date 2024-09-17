@@ -28,13 +28,14 @@ body {
 h1 {
     font-weight: bold;
     text-align: center;
-    font-size: 70px;
+    font-size: 100px;
 }
 .at {
     font-weight: bold;
     text-align: center;
     margin:0;
-    font-size: 70px;
+    /* font-size: 70px; */
+    font-size: 4vw;
     padding-bottom:3vh;
 }
 h2{
@@ -99,7 +100,8 @@ h3{
 .header h1 {
     font-weight: bold;
     text-align: center;
-    font-size: 70px;
+    /* font-size: 70; */
+    font-size: 4vw;
     position: relative; /* Ensures text stays above the image */
     z-index: 1; /* Ensures text stays above the image */
     margin: 0; /* No extra margins */
@@ -110,14 +112,18 @@ h3{
 {
     font-weight: lighter;
     text-align: center;
-    font-size: 100px;
+    /* font-size: 100px; */
+    font-size:6vw;
     position: relative; /* Ensures text stays above the image */
     z-index: 1; /* Ensures text stays above the image */
     margin: 0; /* No extra margins */
-    padding: 4vh;
+    /* padding: 4vw; */
+    padding:0.5vw;
 }
 /* SVG styles for the oc branding */
 .svgstylings {
+    width:15vw;
+    height:auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -163,6 +169,7 @@ h3{
     position: sticky;
     top: 0;
     width: 100%;
+    font-size:2vw;
 }
 
 .nav-bar li {
@@ -211,6 +218,7 @@ h3{
     top: 0;
     text-align:center;
     margin-top: 100px;
+    font-size:3.5vw;
 } 
 
 /* 
