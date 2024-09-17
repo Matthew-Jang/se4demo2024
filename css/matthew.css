@@ -2,31 +2,50 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /* Centering images */
-.center {
+/* .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
-}
+} */
 
 /* General body styles */
 body {
     font-family: Poppins, sans-serif;
-    font-size: 28px;
+    /* font-size: 28px; */
+    font-size: clamp(15px, 2vw, 28px);
     color: white;
     background-color: #282828;
+    margin:0;
+    padding:0;
 }
 
-#title-container {
+/* #title-container {
     font-size: 100px;
     text-align: center;
-}
+} */
 
 /* Header styles */
+.about-us{
+    font-weight: bold;
+    text-align: center;
+    margin:0;
+    /* font-size: 70px; */
+    font-size: 4vw;
+    padding-bottom:3vh;
+}
 h1 {
-    font-weight: lighter;
+    font-weight: bold;
     text-align: center;
     font-size: 100px;
+}
+.at {
+    font-weight: bold;
+    text-align: center;
+    margin:0;
+    /* font-size: 70px; */
+    font-size: 4vw;
+    padding-bottom:3vh;
 }
 h2{
     font-weight: bold;
@@ -36,13 +55,37 @@ h2{
 h3{
     font-weight: bold;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
 }
-
+.top-left-logo {
+    position: absolute;
+    /* font-size: clamp(40px, 2vw, 80px); */
+    top: 10px;      /* Adjust for slight padding from the top */
+    left: 10px;     /* Adjust for slight padding from the left */
+    width: clamp(30px, 5vw, 90px);    /* Set a smaller width */
+    height: auto;   /* Maintain aspect ratio */
+    z-index: 10;    /* Keep it above other content */
+}
 /***************************************************************************************/
 /*  Image and Welcome Section  */
+.header-wrapper {
+    width:100%;
+    /* height:100%; */
+    /* width: 100vw;   */
+    height: 100vh; 
+    position: relative;
+    overflow: hidden; /* Prevents content from spilling over */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
     position: relative;
     text-align: center;
     color: white; /* Adjust text color to contrast with the image */
@@ -50,33 +93,66 @@ h3{
     padding:0;
     margin:0;
     margin-bottom:0px;
+    /* margin-top: 5%;  */
+    padding-top: 10vh;
 }
 
 .header-bg-img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width:100%;
+    /* height:100%; */
+    /* width: 100vw;   */
+    height: 100vh; 
     object-fit: cover; /* Ensures the image covers the area */
     z-index: -1; /* Places the image behind the text */
+    padding:0;
 }
 
-.header h2, #title-container, #day-in-the-life-title-container, #software-dev-title-container,
-#cybersecurity-title-container, #ai-title-container, #team-title-container, #ga-title-container {
-    font-weight: lighter;
+.header h1 {
+    font-weight: bold;
     text-align: center;
-    font-size: 80px;
+    /* font-size: 70; */
+    font-size: 4vw;
     position: relative; /* Ensures text stays above the image */
     z-index: 1; /* Ensures text stays above the image */
+    margin: 0; /* No extra margins */
+}
+
+#title-container, #day-in-the-life-title-container, #software-dev-title-container,
+#cybersecurity-title-container, #ai-title-container, #team-title-container, #ga-title-container
+{
+    font-weight: lighter;
+    text-align: center;
+    /* font-size: 100px; */
+    font-size:6vw;
+    position: relative; /* Ensures text stays above the image */
+    z-index: 1; /* Ensures text stays above the image */
+    margin: 0; /* No extra margins */
+    /* padding: 4vw; */
+    padding:0.5vw;
+}
+/* SVG styles for the oc branding */
+.svgstylings {
+    width:15vw;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    fill: white;
+    padding-top: 2vh;
+    padding-bottom:0;
 }
 
 .header-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width:100%;
+    /* height:100%; */
+    /* width: 100vw;   */
+    height: 100vh; 
     background: rgba(0, 0, 0, .5); /* Black overlay with 50% opacity */
     z-index: -1;
 }
@@ -86,7 +162,7 @@ h3{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh; 
     background: rgba(0, 0, 0, .7); /* Black overlay with 50% opacity */
     z-index: -1;
 }
@@ -102,13 +178,17 @@ h3{
     overflow: hidden;
     background-color: #811429;
     position: -webkit-sticky; /* Safari */
+    position: relative;
     position: sticky;
     top: 0;
-    margin-top: -70px;
+    width: 100%;
+    font-size:clamp(10px, 2vw, 30px);
 }
 
 .nav-bar li {
     float: left;
+    padding:0;
+    margin:0;
 }
 
 .nav-bar li a {
@@ -127,25 +207,19 @@ h3{
     background-color: #48111C;
 }
 
-/* SVG styles for the oc branding */
-.svgstylings {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    fill: white;
-}
-
 /***************************************************************************************/
 /*     Sections     */
 
 .intro-section {
     background-color: #282828; /* Dark background for contrast */
     color: white; /* White text for readability */
-    padding: 20px; /* Padding around the content */
+    padding: clamp(10px, 2vw, 30px); /* Padding around the content */
     text-align: center; /* Center align text */
     margin: 0;
     margin-left:20%;
     margin-right:20%;
+    margin-bottom:0;
+    padding-bottom:0;
 }
 
 .section-title h2{
@@ -156,7 +230,10 @@ h3{
     background-color: #811429;
     top: 0;
     text-align:center;
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    margin-top: clamp(30px, 5vw, 80px);
+    /* font-size:3.5vw; */
+    font-size: clamp(20px, 2vw, 30px);
 } 
 
 /* 
@@ -180,8 +257,11 @@ teal - rgb(39,87,90);
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     grid-template-rows: repeat(2, auto); /* Two rows */
-    gap: 20px; /* Spacing between grid items */
-    padding: 20px;
+    
+    /*gap: 20px;  */ /* Spacing between grid items */
+    gap: clamp(5px, 2vw, 20px);
+    /* padding: 20px; */
+    padding: clamp(5px, 2vw, 20px);
 }
 
 /* Individual grid items */
@@ -203,12 +283,14 @@ teal - rgb(39,87,90);
 /* Title in grid items */
 .grid-item h2 {
     margin: 10px 0 5px;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size:clamp(14px, 2vw, 24px);
 }
 
 /* Paragraph in grid items */
 .grid-item p {
-    font-size: 14px;
+    /* font-size:14px; */
+    font-size: clamp(5px, 2vw, 14px);
     color: rgb(213,223,231);
 }
 
@@ -253,8 +335,10 @@ teal - rgb(39,87,90);
     border-radius: 10px;
     margin-left: 25px;
     margin-right: 25px;
-    width: 300px;
-    height: 300px;
+    width: clamp(100px, 10vw, 300px);
+    height: clamp(100px, 10vw, 300px);
+    /* width: 300px;
+    height: 300px; */
 }
 
 .section div {
@@ -269,13 +353,18 @@ teal - rgb(39,87,90);
     margin-bottom: 0px;
     margin-left:0px;
     text-align:left;
+    font-size: clamp(5px, 5vw, 40px);
 }
 
 .section p {
     margin-top: 0;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: clamp(4px, 2vw, 25px);
+    padding:1vw;
 }
 
-/* unused */
+/* unused *************************************************/
 .section-divider {
     border-bottom: 1px solid white; /* Thin white line */
     margin: 20px 0; /* Adjust spacing above and below the line */
@@ -313,9 +402,10 @@ teal - rgb(39,87,90);
     background-color: #811429;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    font-size: 18px;
+    padding: 10px 0;
+    margin-top: 50px;
+    /* font-size: 18px; */
+    font-size: clamp(10px, 2vw, 18px);
 }
 
 .footer a {
@@ -327,4 +417,47 @@ teal - rgb(39,87,90);
     text-decoration: underline;
 }
 /*     Matthew CSS Section End    */
+/***************************************************************************************/
+
+
+
+
+/***************************************************************************************/
+/*      Michael's stuff Start     */
+.my-cat-image {
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+
+/* Style for left-aligned header */
+.left-align-header {
+    background-color: #811429; 
+    padding: 10px; /* Adds space around the text inside the background */
+    border-radius: 5px; /* Rounds the corners of the background */
+    display: inline-block;
+    text-align: left; /* Aligns text to the left */
+}
+
+.right-align-h{
+    background-color: #811429; 
+    padding: 10px; /* Adds space around the text inside the background */
+    border-radius: 5px; /* Rounds the corners of the background */
+    text-align: right; /* Aligns text to the right */
+}
+
+/* Style for left-aligned paragraphs */
+.left-align {
+    padding: 10px; /* Adds space around the text inside the background */
+    border-radius: 5px; /* Rounds the corners of the background */
+    /* display: inline-block; */
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Style for right-aligned paragraphs */
+.right-align {
+    text-align: right; /* Aligns text to the right */
+}
+
+/*      Michael's stuff END     */
 /***************************************************************************************/

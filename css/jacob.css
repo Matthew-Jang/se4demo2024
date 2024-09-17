@@ -24,15 +24,15 @@ h1 {
     font-size: 70px;
 }
 
-/* Navigation bar styles */
-ul {
+/* Navigation bar styles */ /* jake's original */
+/* ul {
     font-family: Poppins, sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #811429;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky; /* Safari 
     position: sticky;
     top: 0;
 }
@@ -50,6 +50,43 @@ li a {
 }
 
 li a:hover {
+    background-color: #48111C;
+}
+
+.active {
+    background-color: #48111C;
+} */
+
+.nav-bar {
+    font-family: Poppins, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #811429;
+    position: -webkit-sticky; /* Safari */
+    position: relative;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-size:clamp(10px, 2vw, 30px);
+}
+
+.nav-bar li {
+    float: left;
+    padding:0;
+    margin:0;
+}
+
+.nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
     background-color: #48111C;
 }
 
@@ -87,7 +124,8 @@ li a:hover {
     background-color: #333;
     border-radius: 10px;
     overflow: hidden;
-    width: 250px;
+    /* width: 250px; */
+    width: clamp(100px, 30vw, 250px);
     text-align: center;
     color: white;
     position: relative;
@@ -99,7 +137,8 @@ li a:hover {
 }
 
 .career-card h2 {
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: clamp(10px, 2vw, 24px);
     margin: 15px 0;
 }
 
@@ -141,6 +180,19 @@ li a:hover {
 .footer a:hover {
     text-decoration: underline;
 }
+
+.section-title h2{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;;
+    top: 0;
+    text-align:center;
+    /* margin-top: 100px; */
+    margin-top: clamp(30px, 5vw, 80px);
+    /* font-size:3.5vw; */
+    font-size: clamp(20px, 5vw, 70px);
+} 
 
 /* Landing stuff */
 
