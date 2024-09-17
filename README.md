@@ -5,6 +5,7 @@ Most of the time on this project was on the landing images, text functions, and 
 
 (images at the bottom of the pages are links!)
 (colored text are links!)
+(the red button looking things on the index page are NOT links or buttons)
 
 List of actual pages
 - index.html
