@@ -28,6 +28,13 @@ h1 {
     text-align: center;
     font-size: 70px;
 }
+.at {
+    font-weight: bold;
+    text-align: center;
+    margin:0;
+    font-size: 70px;
+    padding-bottom:3vh;
+}
 h2{
     font-weight: bold;
     text-align: center;
@@ -36,7 +43,7 @@ h2{
 h3{
     font-weight: bold;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
 }
 .top-left-logo {
     position: absolute;
@@ -69,7 +76,8 @@ h3{
     padding:0;
     margin:0;
     margin-bottom:0px;
-    margin-top: 5%;
+    /* margin-top: 5%;  */
+    padding-top: 10vh;
 }
 
 .header-bg-img {
@@ -84,23 +92,34 @@ h3{
     z-index: -1; /* Places the image behind the text */
 }
 
-.header h2, #title-container, #day-in-the-life-title-container, #software-dev-title-container,
-#cybersecurity-title-container, #ai-title-container, #team-title-container, #ga-title-container {
+.header h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 70px;
+    position: relative; /* Ensures text stays above the image */
+    z-index: 1; /* Ensures text stays above the image */
+    margin: 0; /* No extra margins */
+}
+
+#title-container, #day-in-the-life-title-container, #software-dev-title-container,
+#cybersecurity-title-container, #ai-title-container, #team-title-container, #ga-title-container
+{
     font-weight: lighter;
     text-align: center;
     font-size: 100px;
     position: relative; /* Ensures text stays above the image */
     z-index: 1; /* Ensures text stays above the image */
     margin: 0; /* No extra margins */
-    padding: 0.5vh;
+    padding: 4vh;
 }
-
 /* SVG styles for the oc branding */
 .svgstylings {
     display: block;
     margin-left: auto;
     margin-right: auto;
     fill: white;
+    padding-top: 2vh;
+    padding-bottom:0;
 }
 
 .header-overlay {
