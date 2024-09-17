@@ -17,16 +17,16 @@ body {
     background-color: #282828;
 }
 
-#title-container {
+/* #title-container {
     font-size: 100px;
     text-align: center;
-}
+} */
 
 /* Header styles */
 h1 {
-    font-weight: lighter;
+    font-weight: bold;
     text-align: center;
-    font-size: 100px;
+    font-size: 70px;
 }
 h2{
     font-weight: bold;
@@ -38,9 +38,28 @@ h3{
     text-align: center;
     font-size: 50px;
 }
-
+.top-left-logo {
+    position: absolute;
+    top: 10px;      /* Adjust for slight padding from the top */
+    left: 10px;     /* Adjust for slight padding from the left */
+    width: 80px;    /* Set a smaller width */
+    height: auto;   /* Maintain aspect ratio */
+    z-index: 10;    /* Keep it above other content */
+}
 /***************************************************************************************/
 /*  Image and Welcome Section  */
+.header-wrapper {
+    /* width:100%;
+    height:100%; */
+    width: 100vw;  
+    height: 100vh; 
+    position: relative;
+    overflow: hidden; /* Prevents content from spilling over */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .header {
     position: relative;
@@ -50,14 +69,17 @@ h3{
     padding:0;
     margin:0;
     margin-bottom:0px;
+    margin-top: 5%;
 }
 
 .header-bg-img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    /* width:100%;
+    height:100%; */
+    width: 100vw;  
+    height: 100vh; 
     object-fit: cover; /* Ensures the image covers the area */
     z-index: -1; /* Places the image behind the text */
 }
@@ -66,17 +88,29 @@ h3{
 #cybersecurity-title-container, #ai-title-container, #team-title-container, #ga-title-container {
     font-weight: lighter;
     text-align: center;
-    font-size: 80px;
+    font-size: 100px;
     position: relative; /* Ensures text stays above the image */
     z-index: 1; /* Ensures text stays above the image */
+    margin: 0; /* No extra margins */
+    padding: 0.5vh;
+}
+
+/* SVG styles for the oc branding */
+.svgstylings {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    fill: white;
 }
 
 .header-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    /* width:100%;
+    height:100%; */
+    width: 100vw;  
+    height: 100vh; 
     background: rgba(0, 0, 0, .5); /* Black overlay with 50% opacity */
     z-index: -1;
 }
@@ -102,9 +136,9 @@ h3{
     overflow: hidden;
     background-color: #811429;
     position: -webkit-sticky; /* Safari */
+    position: relative;
     position: sticky;
     top: 0;
-    margin-top: -70px;
 }
 
 .nav-bar li {
@@ -125,14 +159,6 @@ h3{
 
 .active {
     background-color: #48111C;
-}
-
-/* SVG styles for the oc branding */
-.svgstylings {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    fill: white;
 }
 
 /***************************************************************************************/
