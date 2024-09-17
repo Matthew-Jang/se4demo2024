@@ -26,6 +26,14 @@ body {
 } */
 
 /* Header styles */
+.about-us{
+    font-weight: bold;
+    text-align: center;
+    margin:0;
+    /* font-size: 70px; */
+    font-size: 4vw;
+    padding-bottom:3vh;
+}
 h1 {
     font-weight: bold;
     text-align: center;
