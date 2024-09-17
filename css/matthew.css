@@ -54,7 +54,7 @@ h3{
     /* font-size: clamp(40px, 2vw, 80px); */
     top: 10px;      /* Adjust for slight padding from the top */
     left: 10px;     /* Adjust for slight padding from the left */
-    width: clamp(40px, 10vw, 90px);    /* Set a smaller width */
+    width: clamp(30px, 5vw, 90px);    /* Set a smaller width */
     height: auto;   /* Maintain aspect ratio */
     z-index: 10;    /* Keep it above other content */
 }
