@@ -12,7 +12,8 @@
 /* General body styles */
 body {
     font-family: Poppins, sans-serif;
-    font-size: 28px;
+    /* font-size: 28px; */
+    font-size: clamp(15px, 2vw, 28px);
     color: white;
     background-color: #282828;
     margin:0;
@@ -50,9 +51,10 @@ h3{
 }
 .top-left-logo {
     position: absolute;
+    /* font-size: clamp(40px, 2vw, 80px); */
     top: 10px;      /* Adjust for slight padding from the top */
     left: 10px;     /* Adjust for slight padding from the left */
-    width: 80px;    /* Set a smaller width */
+    width: clamp(40px, 10vw, 90px);    /* Set a smaller width */
     height: auto;   /* Maintain aspect ratio */
     z-index: 10;    /* Keep it above other content */
 }
@@ -172,7 +174,7 @@ h3{
     position: sticky;
     top: 0;
     width: 100%;
-    font-size:2vw;
+    font-size:clamp(10px, 2vw, 30px);
 }
 
 .nav-bar li {
@@ -203,7 +205,7 @@ h3{
 .intro-section {
     background-color: #282828; /* Dark background for contrast */
     color: white; /* White text for readability */
-    padding: 20px; /* Padding around the content */
+    padding: clamp(10px, 2vw, 30px); /* Padding around the content */
     text-align: center; /* Center align text */
     margin: 0;
     margin-left:20%;
@@ -220,8 +222,10 @@ h3{
     background-color: #811429;
     top: 0;
     text-align:center;
-    margin-top: 100px;
-    font-size:3.5vw;
+    /* margin-top: 100px; */
+    margin-top: clamp(30px, 5vw, 80px);
+    /* font-size:3.5vw; */
+    font-size: clamp(20px, 2vw, 30px);
 } 
 
 /* 
@@ -245,8 +249,11 @@ teal - rgb(39,87,90);
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     grid-template-rows: repeat(2, auto); /* Two rows */
-    gap: 20px; /* Spacing between grid items */
-    padding: 20px;
+    
+    /*gap: 20px;  */ /* Spacing between grid items */
+    gap: clamp(5px, 2vw, 20px);
+    /* padding: 20px; */
+    padding: clamp(5px, 2vw, 20px);
 }
 
 /* Individual grid items */
@@ -268,12 +275,14 @@ teal - rgb(39,87,90);
 /* Title in grid items */
 .grid-item h2 {
     margin: 10px 0 5px;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size:clamp(14px, 2vw, 24px);
 }
 
 /* Paragraph in grid items */
 .grid-item p {
-    font-size: 14px;
+    /* font-size:14px; */
+    font-size: clamp(5px, 2vw, 14px);
     color: rgb(213,223,231);
 }
 
@@ -340,7 +349,7 @@ teal - rgb(39,87,90);
     margin-top: 0;
 }
 
-/* unused */
+/* unused *************************************************/
 .section-divider {
     border-bottom: 1px solid white; /* Thin white line */
     margin: 20px 0; /* Adjust spacing above and below the line */
@@ -378,9 +387,10 @@ teal - rgb(39,87,90);
     background-color: #811429;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    font-size: 18px;
+    padding: 10px 0;
+    margin-top: 50px;
+    /* font-size: 18px; */
+    font-size: clamp(10px, 2vw, 18px);
 }
 
 .footer a {
