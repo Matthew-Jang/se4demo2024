@@ -1,54 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Oklahoma Christian's 100% Unofficial Computer Science Website Part: 6</title>
-    <link rel="icon" href="assets/favicon-32x32.png" type="image/png">
+  <title>Oklahoma Christian's 100% Unofficial Computer Science Website Part: 6</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/favicon-32x32.png" type="image/png">
 </head>
+
 <body>
-<a href="https://www.oc.edu/">
-    <img src="assets/OC Square.png">
-</a>
-<header>
-    <div class="header">
+  <script src="js/script.js"></script>
+
+  <a href="https://www.oc.edu/">
+    <img src="assets/OC Square.png" class="top-left-logo">
+  </a>
+
+  <header>
+    <div class="header-wrapper">
+      <div class="header">
         <h1>We Love</h1>
-    <div id="faq-word-container">Questions</div>
-	<h1>At</h1>
-</header>
-    <script src="js/script.js"></script>
-
+        <div id="faq-word-container">Questions</div>
+        <div class="at">At</div>
         <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" class="svgstylings" viewBox="0 0 256 256">
-            <g>
-                <path d="m73.38,106.87c-20.27,0-36.71-15.95-36.71-35.62s16.44-35.62,36.71-35.62,36.71,15.95,36.71,35.62-16.44,35.62-36.71,35.62M220,35.62V0c-39.29,0-71.37,29.94-73.33,67.59C144.7,29.97,112.64.06,73.38.06S0,31.93,0,71.26s32.85,71.2,73.38,71.2,71.32-29.92,73.29-67.54c1.96,37.65,34.04,67.58,73.33,67.58v-35.63c-20.24,0-36.71-15.98-36.71-35.62s16.46-35.62,36.71-35.62"></path>
-            </g>
+          <g>
+            <path
+              d="m73.38,106.87c-20.27,0-36.71-15.95-36.71-35.62s16.44-35.62,36.71-35.62,36.71,15.95,36.71,35.62-16.44,35.62-36.71,35.62M220,35.62V0c-39.29,0-71.37,29.94-73.33,67.59C144.7,29.97,112.64.06,73.38.06S0,31.93,0,71.26s32.85,71.2,73.38,71.2,71.32-29.92,73.29-67.54c1.96,37.65,34.04,67.58,73.33,67.58v-35.63c-20.24,0-36.71-15.98-36.71-35.62s16.46-35.62,36.71-35.62">
+            </path>
+          </g>
         </svg>
+      </div>
     </div>
+  </header>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="getting_started.html">Getting Started</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="day_in_the_life.html">A Day in the Life</a></li>
-        <li><a class="active" href="faq.html">FAQ</a></li>
-        <li><a href="about_us.html">About Us</a></li>
-    </ul>
+  <!-- Matthew's for responsiveness -->
+  <!-- Navigation Bar -->
+  <div class="nav-bar">
+    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="getting_started.html">Getting Started</a></li>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="day_in_the_life.html">A Day in the Life</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="about_us.html">About Us</a></li>
+  </div>
 
-    <h2>FAQS</h2>
 
- <h3>General Questions</h3>
+  <!-- Michael's original -->
+  <!-- <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting_started.html">Getting Started</a></li>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="day_in_the_life.html">A Day in the Life</a></li>
+    <li><a class="active" href="faq.html">FAQ</a></li>
+    <li><a href="about_us.html">About Us</a></li>
+  </ul> -->
+
+  <h2>FAQS</h2>
+
+  <h3>General Questions</h3>
 
   <div class="accordion">
     <div class="accordion-item">
       <button class="accordion-header">What is computer science?</button>
       <div class="accordion-content">
-        <p>Computer science is the study of computers and computational systems. It involves both theoretical studies of algorithms and practical aspects of implementing them through computer software and hardware.</p>
+        <p>Computer science is the study of computers and computational systems. It involves both theoretical studies of
+          algorithms and practical aspects of implementing them through computer software and hardware.</p>
       </div>
     </div>
     <p></p>
     <div class="accordion-item">
       <button class="accordion-header">What are the main areas of computer science?</button>
       <div class="accordion-content">
-	<p>Major areas include algorithms and data structures, programming languages, software engineering, computer architecture, artificial intelligence, databases, networking, and cybersecurity.</p>
+        <p>Major areas include algorithms and data structures, programming languages, software engineering, computer
+          architecture, artificial intelligence, databases, networking, and cybersecurity.</p>
       </div>
     </div>
 
@@ -56,43 +79,51 @@
     <div class="accordion-item">
       <button class="accordion-header">What skills are important for studying computer science?</button>
       <div class="accordion-content">
-	<p>Key skills include problem-solving, logical thinking, attention to detail, mathematical proficiency, and proficiency in programming languages.</p>
+        <p>Key skills include problem-solving, logical thinking, attention to detail, mathematical proficiency, and
+          proficiency in programming languages.</p>
       </div>
     </div>
 
-<h3>Academic Preparation</h3>
+    <h3>Academic Preparation</h3>
 
     <p></p>
     <div class="accordion-item">
       <button class="accordion-header">What are the educational requirements to study computer science?</button>
       <div class="accordion-content">
-	<p>Typically, a high school diploma with strong performance in mathematics and science is required. Some programs may also require coursework in programming or computer science.</p>
+        <p>Typically, a high school diploma with strong performance in mathematics and science is required. Some
+          programs may also require coursework in programming or computer science.</p>
       </div>
     </div>
 
     <p></p>
     <div class="accordion-item">
-      <button class="accordion-header">Do I need to have prior programming experience before starting a computer science program?</button>
+      <button class="accordion-header">Do I need to have prior programming experience before starting a computer science
+        program?</button>
       <div class="accordion-content">
-	<p>While prior programming experience can be beneficial, many computer science programs start with introductory courses that teach basic programming skills.</p>
+        <p>While prior programming experience can be beneficial, many computer science programs start with introductory
+          courses that teach basic programming skills.</p>
       </div>
     </div>
 
     <p></p>
     <div class="accordion-item">
-      <button class="accordion-header">What subjects should I focus on in high school to prepare for a computer science degree?</button>
+      <button class="accordion-header">What subjects should I focus on in high school to prepare for a computer science
+        degree?</button>
       <div class="accordion-content">
-	<p>Focus on mathematics (especially algebra and calculus), computer science, physics, and logic. Advanced courses in programming, if available, are also useful.</p>
+        <p>Focus on mathematics (especially algebra and calculus), computer science, physics, and logic. Advanced
+          courses in programming, if available, are also useful.</p>
       </div>
     </div>
 
-<h3>Study and Coursework</h3>
+    <h3>Study and Coursework</h3>
 
     <p></p>
     <div class="accordion-item">
       <button class="accordion-header">What kind of coursework can I expect in a computer science program?</button>
       <div class="accordion-content">
-	<p>Coursework typically includes programming, data structures and algorithms, computer systems, databases, software engineering, operating systems, and elective courses in areas like artificial intelligence or cybersecurity.</p>
+        <p>Coursework typically includes programming, data structures and algorithms, computer systems, databases,
+          software engineering, operating systems, and elective courses in areas like artificial intelligence or
+          cybersecurity.</p>
       </div>
     </div>
 
@@ -100,7 +131,8 @@
     <div class="accordion-item">
       <button class="accordion-header">Are there specific programming languages I should learn first?</button>
       <div class="accordion-content">
-	<p>Common introductory languages include Python, Java, and C++. The choice may depend on the specific program or curriculum.</p>
+        <p>Common introductory languages include Python, Java, and C++. The choice may depend on the specific program or
+          curriculum.</p>
       </div>
     </div>
 
@@ -108,26 +140,30 @@
     <div class="accordion-item">
       <button class="accordion-header">How much math is involved in computer science studies?</button>
       <div class="accordion-content">
-	<p>Mathematics is a significant part of computer science, including topics such as discrete mathematics, linear algebra, calculus, and statistics.</p>
+        <p>Mathematics is a significant part of computer science, including topics such as discrete mathematics, linear
+          algebra, calculus, and statistics.</p>
       </div>
     </div>
 
-<h3>Career and Practical Experience</h3>
+    <h3>Career and Practical Experience</h3>
 
     <p></p>
     <div class="accordion-item">
       <button class="accordion-header">What types of careers can I pursue with a computer science degree?</button>
       <div class="accordion-content">
-	<p>Career options include software developer, data scientist, systems analyst, cybersecurity specialist, network engineer, and artificial intelligence engineer, among others.</p>
+        <p>Career options include software developer, data scientist, systems analyst, cybersecurity specialist, network
+          engineer, and artificial intelligence engineer, among others.</p>
       </div>
     </div>
 
 
     <p></p>
     <div class="accordion-item">
-      <button class="accordion-header">How important is practical experience and internships in computer science?</button>
+      <button class="accordion-header">How important is practical experience and internships in computer
+        science?</button>
       <div class="accordion-content">
-	<p>Practical experience is crucial. Internships, coding projects, and practical assignments provide hands-on experience and enhance job readiness.</p>
+        <p>Practical experience is crucial. Internships, coding projects, and practical assignments provide hands-on
+          experience and enhance job readiness.</p>
       </div>
     </div>
 
@@ -135,17 +171,19 @@
     <div class="accordion-item">
       <button class="accordion-header">Should I participate in coding competitions or hackathons?</button>
       <div class="accordion-content">
-	<p>Yes, participating in coding competitions and hackathons can be a great way to practice skills, build a portfolio, and network with professionals.</p>
+        <p>Yes, participating in coding competitions and hackathons can be a great way to practice skills, build a
+          portfolio, and network with professionals.</p>
       </div>
     </div>
 
-<h3>Challenges and Tips</h3>
+    <h3>Challenges and Tips</h3>
 
     <p></p>
     <div class="accordion-item">
       <button class="accordion-header">What are some common challenges in studying computer science?</button>
       <div class="accordion-content">
-	<p>Common challenges include managing complex problem-solving tasks, understanding abstract concepts, keeping up with rapidly evolving technology, and debugging code.</p>
+        <p>Common challenges include managing complex problem-solving tasks, understanding abstract concepts, keeping up
+          with rapidly evolving technology, and debugging code.</p>
       </div>
     </div>
 
@@ -153,7 +191,8 @@
     <div class="accordion-item">
       <button class="accordion-header">What study habits are recommended for computer science students?</button>
       <div class="accordion-content">
-	<p>Recommended habits include regular practice, seeking help when needed, working on projects, collaborating with peers, and staying updated with industry trends.</p>
+        <p>Recommended habits include regular practice, seeking help when needed, working on projects, collaborating
+          with peers, and staying updated with industry trends.</p>
       </div>
     </div>
 
@@ -161,17 +200,20 @@
     <div class="accordion-item">
       <button class="accordion-header">How can I stay motivated and succeed in a computer science program?</button>
       <div class="accordion-content">
-	<p>Set clear goals, break tasks into manageable chunks, seek support from peers and mentors, and stay curious and engaged with technology.</p>
+        <p>Set clear goals, break tasks into manageable chunks, seek support from peers and mentors, and stay curious
+          and engaged with technology.</p>
       </div>
-    </div> 
+    </div>
 
-<h3>Additional Resources</h3>
+    <h3>Additional Resources</h3>
 
     <p></p>
     <div class="accordion-item">
-      <button class="accordion-header">What are some good resources for learning computer science outside of the classroom?</button>
+      <button class="accordion-header">What are some good resources for learning computer science outside of the
+        classroom?</button>
       <div class="accordion-content">
-	<p>Resources include online courses (e.g., Coursera, edX, Udacity), coding practice platforms (e.g., LeetCode, HackerRank), books, tutorials, and tech communities.</p>
+        <p>Resources include online courses (e.g., Coursera, edX, Udacity), coding practice platforms (e.g., LeetCode,
+          HackerRank), books, tutorials, and tech communities.</p>
       </div>
     </div>
 
@@ -179,14 +221,16 @@
     <div class="accordion-item">
       <button class="accordion-header">How important is networking in the field of computer science?</button>
       <div class="accordion-content">
-	<p>Networking is very important. Connecting with professionals, joining tech communities, and attending industry events can provide opportunities and insights.</p>
+        <p>Networking is very important. Connecting with professionals, joining tech communities, and attending industry
+          events can provide opportunities and insights.</p>
       </div>
     </div>
 
     <h5>Written By</h5>
-<a  href="memes.html">
-    <img src="assets/Cute Rat.jpg" class="my-rat-image">
-</a>
-   
+    <a href="memes.html">
+      <img src="assets/Cute Rat.jpg" class="my-rat-image">
+    </a>
+
 </body>
+
 </html>
