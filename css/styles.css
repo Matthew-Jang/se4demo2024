@@ -16,6 +16,8 @@ body {
     font-size: 28px;
     color: white;
     background-color: #282828;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header styles */
@@ -24,34 +26,41 @@ h1 {
     text-align: center;
     font-size: 70px;
 }
-h2{
+
+h2 {
     font-weight: bold;
     text-align: center;
     font-size: 70px;
 }
-h3{
+
+h3 {
     font-weight: bold;
     text-align: center;
     font-size: 50px;
 }
-h4{
+
+h4 {
     font-weight: bold;
     font-size: 28px;
 }
-h5{
+
+h5 {
     font-weight: bold;
     text-align: right;
-    font-size: 28px;
+    font-size: clamp(5px, 2vw, 25px);
 }
+
+
+/*michael's originals
 /* Navigation bar styles */
-ul {
+/* ul {
     font-family: Poppins, sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #811429;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky; 
     position: sticky;
     top: 0;
 }
@@ -74,27 +83,85 @@ li a:hover {
 
 .active {
     background-color: #48111C;
-}
+} */
 
 /* SVG styles for the oc branding */
-.svgstylings {
+/*michaels original*/
+/* .svgstylings {
     display: block;
     margin-left: auto;
     margin-right: auto;
     fill: white;
+} */
+
+/* matthew's for responsiveness */
+.nav-bar {
+    font-family: Poppins, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #811429;
+    position: -webkit-sticky;
+    /* Safari */
+    position: relative;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-size: clamp(10px, 2vw, 30px);
+}
+
+.nav-bar li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
+    background-color: #48111C;
+}
+
+.active {
+    background-color: #48111C;
+}
+
+/* matthew's for responsiveness */
+.svgstylings {
+    width: 15vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    fill: white;
+    padding-top: 2vh;
+    padding-bottom: 0;
 }
 
 .my-cat-image {
     float: right;
-    width: 200px;
-    height: 200px;
+    width: clamp(10px, 20vw, 200px);
+    height: clamp(10px, 20vw, 200px);
+    /* width: 200px;
+    height: 200px; */
 }
+
 .my-rat-image {
     float: right;
-    width: 10%;
-    height: 10%;
+    /* width: 10%;
+    height: 10%; */
+    width: clamp(10px, 20vw, 200px);
+    height: clamp(10px, 20vw, 200px);
 }
-.my-meme-image{
+
+.my-meme-image {
 
     display: block;
     margin-left: auto;
@@ -102,91 +169,158 @@ li a:hover {
     width: 3%;
 }
 
-#emoji-container {
+/* michael's original*/
+/* #emoji-container {
     font-size: 100px;
     text-align: center;
     margin-top: 50px;
     z-index: 1;
+} */
+
+/* mine for responsiveness*/
+#emoji-container {
+    font-weight: lighter;
+    text-align: center;
+    /* font-size: 100px; */
+    font-size: 6vw;
+    position: relative;
+    /* Ensures text stays above the image */
+    z-index: 1;
+    /* Ensures text stays above the image */
+    margin: 0;
+    /* No extra margins */
+    /* padding: 4vw; */
+    padding: 0.5vw;
 }
+
+/* michael's original */
+/* #faq-word-container {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 50px;
+} */
+
+/* matthew's for responsiveness */
 #faq-word-container {
-    font-size: 100px;
+    font-weight: lighter;
     text-align: center;
-    margin-top: 50px;
+    /* font-size: 100px; */
+    font-size: 6vw;
+    position: relative;
+    /* Ensures text stays above the image */
+    z-index: 1;
+    /* Ensures text stays above the image */
+    margin: 0;
+    /* No extra margins */
+    /* padding: 4vw; */
+    padding: 0.5vw;
 }
-#meme-container {
+
+/* michael's original */
+/* #meme-container {
     font-size: 100px;
     text-align: center;
     margin-top: 50px;
+} */
+
+/* matthew's for responsiveness */
+#meme-container {
+    font-weight: lighter;
+    text-align: center;
+    /* font-size: 100px; */
+    font-size: 6vw;
+    position: relative;
+    /* Ensures text stays above the image */
+    z-index: 1;
+    /* Ensures text stays above the image */
+    margin: 0;
+    /* No extra margins */
+    /* padding: 4vw; */
+    padding: 0.5vw;
 }
 
 /*accordian stuff*/
 .accordion {
-  max-width: 600px;
-  margin: 0 auto;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .accordion-header {
-  color: white;
-  background-color: #811429;
-  border: 1px solid black;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 10px;
-  text-align: left;
-  outline: none;
-  font-size: 28px;
-  transition: background-color 0.3s ease;
-  
+    color: white;
+    background-color: #811429;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    outline: none;
+    font-size: 28px;
+    transition: background-color 0.3s ease;
+
 }
 
 .accordion-header:hover {
-  background-color: #48111C;
+    background-color: #48111C;
 }
 
 .accordion-content {
-  display: none;
-  padding: 10px;
-  border: 10px solid black;
-  background-color: #282828;
+    display: none;
+    padding: 10px;
+    border: 10px solid black;
+    background-color: #282828;
 }
 
 /* General styling for paragraphs */
 p {
-    font-size: 16px; /* Sets the font size */
-    line-height: 1.5; /* Increases the line height for readability */
-    padding: 10px; /* Adds padding inside each paragraph */
-    background-color:  #282828; /* Sets a light background color */
+    font-size: 16px;
+    /* Sets the font size */
+    line-height: 1.5;
+    /* Increases the line height for readability */
+    padding: 10px;
+    /* Adds padding inside each paragraph */
+    background-color: #282828;
+    /* Sets a light background color */
 }
 
 /* Style for left-aligned header */
 .left-align-header {
-    background-color: #811429; 
-    padding: 10px; /* Adds space around the text inside the background */
-    border-radius: 5px; /* Rounds the corners of the background */
+    background-color: #811429;
+    padding: 10px;
+    /* Adds space around the text inside the background */
+    border-radius: 5px;
+    /* Rounds the corners of the background */
     display: inline-block;
-    text-align: left; /* Aligns text to the left */
+    text-align: left;
+    /* Aligns text to the left */
 }
 
-.right-align-h{
-    background-color: #811429; 
-    padding: 10px; /* Adds space around the text inside the background */
-    border-radius: 5px; /* Rounds the corners of the background */
-    
-    text-align: right; /* Aligns text to the right */
+.right-align-h {
+    background-color: #811429;
+    padding: 10px;
+    /* Adds space around the text inside the background */
+    border-radius: 5px;
+    /* Rounds the corners of the background */
+
+    text-align: right;
+    /* Aligns text to the right */
 
 }
 
 /* Style for left-aligned paragraphs */
 .left-align {
-    padding: 10px; /* Adds space around the text inside the background */
-    border-radius: 5px; /* Rounds the corners of the background */
+    padding: 10px;
+    /* Adds space around the text inside the background */
+    border-radius: 5px;
+    /* Rounds the corners of the background */
     /* display: inline-block; */
-    text-align: left; /* Aligns text to the left */
+    text-align: left;
+    /* Aligns text to the left */
 }
 
 /* Style for right-aligned paragraphs */
 .right-align {
-    text-align: right; /* Aligns text to the right */
+    text-align: right;
+    /* Aligns text to the right */
 }
 
 /*END OF MICHAEL SECTION*/
@@ -197,11 +331,64 @@ p {
 
 /* Footer Styles */
 
+.top-left-logo {
+    position: absolute;
+    /* font-size: clamp(40px, 2vw, 80px); */
+    top: 10px;
+    /* Adjust for slight padding from the top */
+    left: 10px;
+    /* Adjust for slight padding from the left */
+    width: clamp(30px, 5vw, 90px);
+    /* Set a smaller width */
+    height: auto;
+    /* Maintain aspect ratio */
+    z-index: 10;
+    /* Keep it above other content */
+}
+
+.header-wrapper {
+    width: 100%;
+    /* height:100%; */
+    /* width: 100vw;   */
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* Prevents content from spilling over */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .header {
     position: relative;
     text-align: center;
-    color: white; /* Adjust text color to contrast with the image */
-    margin-top: 0; /* Remove margin or set to a small value */
+    color: white;
+    /* Adjust text color to contrast with the image */
+    margin-top: 0;
+    /* Remove margin or set to a small value */
+}
+
+.header h1 {
+    font-weight: bold;
+    text-align: center;
+    /* font-size: 70; */
+    font-size: 4vw;
+    position: relative;
+    /* Ensures text stays above the image */
+    z-index: 1;
+    /* Ensures text stays above the image */
+    margin: 0;
+    /* No extra margins */
+}
+
+.at {
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    /* font-size: 70px; */
+    font-size: 4vw;
+    padding-bottom: 3vh;
 }
 
 .header-bg-img {
@@ -210,13 +397,38 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the area */
-    z-index: -1; /* Places the image behind the text */
+    object-fit: cover;
+    /* Ensures the image covers the area */
+    z-index: -1;
+    /* Places the image behind the text */
 }
 
-.header h2, #emoji-container {
-    position: relative; /* Ensures text stays above the image */
-    z-index: 1; /* Ensures text stays above the image */
+.header h2 {
+    font-weight: bold;
+    text-align: center;
+    /* font-size: 70; */
+    font-size: 4vw;
+    position: relative;
+    /* Ensures text stays above the image */
+    z-index: 1;
+    /* Ensures text stays above the image */
+    margin: 0;
+    /* No extra margins */
+}
+
+#emoji-container {
+    font-weight: lighter;
+    text-align: center;
+    /* font-size: 100px; */
+    font-size: 6vw;
+    position: relative;
+    /* Ensures text stays above the image */
+    z-index: 1;
+    /* Ensures text stays above the image */
+    margin: 0;
+    /* No extra margins */
+    /* padding: 4vw; */
+    padding: 0.5vw;
 }
 
 .header-overlay {
@@ -224,8 +436,37 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    /* height:100%; */
+    /* width: 100vw;   */
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    /* Black overlay with 50% opacity */
     z-index: -1;
 }
+
+.section-title h2{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    top: 0;
+    text-align:center;
+    /* margin-top: 100px; */
+    margin-top: clamp(30px, 5vw, 80px);
+    /* font-size:3.5vw; */
+    font-size: clamp(60px, 2vw, 100px);
+} 
+
+.section-title h3{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    top: 0;
+    text-align:center;
+    /* margin-top: 100px; */
+    margin-top: clamp(30px, 5vw, 80px);
+    /* font-size:3.5vw; */
+    font-size: clamp(10px, 2vw, 30px);
+} 
 /****** MATTHEW ADDITIONS END ******/
